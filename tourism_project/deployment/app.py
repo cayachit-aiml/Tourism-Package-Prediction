@@ -81,6 +81,11 @@ city_tier = st.selectbox(
     [1, 2, 3]
 )
 
+type_of_contact = st.selectbox(
+    "Type of Contact",
+    ["Self Inquiry", "Company Invited"]
+)
+
 # ======================================================
 # TRAVEL PREFERENCES
 # ======================================================
@@ -145,6 +150,7 @@ input_data = pd.DataFrame([{
     "Occupation": occupation,
     "Gender": gender,
     "NumberOfPersonVisiting": number_of_persons,
+    "TypeofContact": type_of_contact,    
     "PreferredPropertyStar": preferred_property_star,
     "MaritalStatus": marital_status,
     "NumberOfTrips": number_of_trips,
@@ -153,6 +159,7 @@ input_data = pd.DataFrame([{
     "NumberOfChildrenVisiting": number_of_children,
     "Designation": designation,
     "MonthlyIncome": monthly_income
+    
 
 }])
 
